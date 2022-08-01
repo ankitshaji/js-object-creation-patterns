@@ -47,6 +47,20 @@ class Color {
     return `hsl(${h},${s}%,${l}%)`;
   }
 
+  //short form of - //method/key : function(){}
+  fullySaturated() {
+    const { h, l } = this;
+    const newS = 100;
+    return `hsl(${h},${newS}%,${l}%)`;
+  }
+
+  //short form of - //method/key : function(){}
+  opposite() {
+    const { h, s, l } = this;
+    const newHue = (h + 180) % 360; //modulo loops if max value crossed
+    return `hsl(${newHue},${s}%,${l}%)`;
+  }
+
   //method on prototypeObejct
   //hue-360degree saturation-% lightness-%
   //each hue degree is diffrent color -poloar opposite +180
@@ -105,5 +119,5 @@ class Color {
 //whether i execute class()/function() or  not ie(class/function),it retruns an instance object
 const c1 = new Color(100, 32, 50, "setName1");
 console.dir(c1);
-console.dir(c1.hsl())
-document.body.style.backgroundColor = c1.hsl();
+console.dir(c1.hsl());
+document.body.style.backgroundColor = c1.fullySaturated();
