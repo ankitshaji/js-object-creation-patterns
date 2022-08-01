@@ -6,9 +6,9 @@
 //classObject.prototype = prototypeObject of classObject
 //with the new keyword -
 //classObjects constructor function implicity creates and returns an instance object
-//costructor function set in classObject.prototype as method
+//ColorObject class with costructor function is set in classObject.prototype as method called constructor
 //instance object gets the classObject.prototype object through reference in its __proto__ property
-//therfore includes the method called constructor which contains the ColorObject class constructor function expression
+//therfore includes the method called constructor which contains the ColorObject class ie constructor function expression
 
 //new classObject() makes us new object instance by calling its constrcutor function - using a classObject pattern
 //eg, new Array(),new String() if they were classObject and not functionObjects
