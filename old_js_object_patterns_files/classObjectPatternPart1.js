@@ -67,6 +67,7 @@ console.dir(Color); //classObject
 console.dir(c1);
 console.dir(c1.rgb()); //instance object calling the prototypeObject method due to reference in its __proto__ property
 console.dir(c1.rgb === c2.rgb); //true same referece oject
+console.dir(c1.age === c2.age);
 console.dir(c2.rgba(0.1));
 
 document.body.style.backgroundColor = c2.rgba(0.3);
