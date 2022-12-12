@@ -750,7 +750,9 @@ class Dog extends Animal {
   //NOTE -
   //In a child/sub class blueprint/temaplte that extends from a parent/super class blueprint/temaplte
   //we only write an explicit short class method syntax named constructor and explcitly execute short class method syntaxed named constructor
-  //of the parent class blueprint/templte when we want to initiazlie extra class properties(ie class variables/fields) ontop of the class propperties(ie class variables/fields) initazlies by
+  //of the parent class blueprint/templte when we want to initiazlie extra class properties(ie class variables/fields)
+  //using any of the arguments passed into the explcit short class method syntax named constructor's parameters,
+  //ontop of the class propperties(ie class variables/fields) that will be initazlies by
   //the explicit execution of the short class method syntax named construor of the parent class blueprint/temaplte.
 
   //instead of namedConstructorFunctionExpressionDefenition with 2 parameters,
@@ -779,11 +781,15 @@ class Cat extends Animal {
   //NOTE -
   //In a child/sub class blueprint/temaplte that extends from a parent/super class blueprint/temaplte
   //we only omit adding the explicit short class method syntax named constructor and explcitly executing the short class method syntaxed named constructor
-  //of the parent class blueprint/templte, when we dont want to initiazlie any extra class properties ontop of the class propperties(ie class variables/fields) initazlies by
-  //the implicit execution of the short class method syntax named construor of the parent class blueprint/temaplte.
+  //of the parent class blueprint/templte, when we dont want to initiazlie any extra class properties(ie class vairables/fields) using any of the
+  //arguments passed into the explicit short class method syntax named constructor's paramters , ontop
+  //of the class properties(ie class variables/fields) that would be initazlies by
+  //the explicit execution of the short class method syntax named constructor of the parent class blueprint/temaplte.
 
-  //implcity create short class method syntax named constructor with 0 paremeters
-  //implcitly execute short class method syntax named constructor of parent class blueprint/temaplte because of extends keyword
+  //implcity create short class method syntax named constructor with 2 paremeters
+  //implcitly execute short class method syntax named constructor of parent class blueprint/temaplte passing in
+  //in 2 arguments(ie the arguments passed into 2 parameters of implcitly created short class method syntax named constructor)
+  //because of extends keyword
 
   //creating/initiazlizing reusabled/common copie of prototypeObject object method on all created/returned literal jsObject ie(the instance jsObject)
   //by adding it as a unique long syntax object method on the prototypeObject instead
@@ -807,7 +813,8 @@ class Mouse {
   //NOTE -
   //In a class blueprint/temaplte that does not extends from a parent/super class blueprint/temaplte
   //we only omit adding the explicit short class method syntax named constructor
-  //when we dont want to initiazlie any class properties
+  //when we dont want to initiazlie any class properties(ie class vairables/fields) using any of the
+  //arguments that would be passed into the explicit short class method syntax named constructor's paramters
 
   //implcity create short class method syntax named constructor with 0 paremeters
 
