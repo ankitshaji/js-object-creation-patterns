@@ -39,7 +39,7 @@ const literalJsObject = {
 //we have 2 instance jsObject creation patterns and 1 literal jsObject creation pattern.
 //we prefer to use a creation pattern beacause it helps us create multiple jsObject(literal jsObject or instance jsObject) without us havine to manually create multple literal jsObjects with similar code rewritten each time.
 //We have 2 creation patterns to to creates an instance jsObject and 1 creation pattern to create a literal jsObject, each of these 3 creation patterns define the
-//shape of the jsObject(instance jsObject/literal jsObject),it is a blueprint/template that sets unique object memebers/keys(ie object properties/object methods)
+//shape of the jsObject(instance jsObject/literal jsObject),it is a blueprint/template that sets up unique object memebers/keys(ie object properties/object methods)
 //the created jsObject(instance jsObject/literal jsObject) will have,as well as sets up the unique object memebers/keys(ie object properties/objecet methods) its prototypeObject will have.
 //Both of the 2 instance jsObject creation patterns sets up a prototypeObject ie template object which gets set as the __proto__ object property on its created instance jsObject
 //The 3 creation patterns are - 1.create a literal jsObject using a factory functionExpressionDefenition and add unqiue copies
@@ -752,10 +752,10 @@ class Dog extends Animal {
   //we only write an explicit short class method syntax named constructor and explcitly execute short class method syntaxed named constructor
   //of the parent class blueprint/templte when we want to initiazlie extra class properties(ie class variables/fields)
   //using any of the arguments passed into the explcit short class method syntax named constructor's parameters,
-  //ontop of the class propperties(ie class variables/fields) that will be initazlies by
+  //ontop of the class properties(ie class variables/fields) that will be initazlies by
   //the explicit execution of the short class method syntax named construor of the parent class blueprint/temaplte.
 
-  //instead of namedConstructorFunctionExpressionDefenition with 2 parameters,
+  //instead of namedConstructorFunctionExpressionDefenition with 3 parameters,
   //we write an explcit short class method syntax named constructor with 3 parameters
   constructor(name, age, livesLeft = 9) {
     //implcitly creating a literal jsObject ie(the instance jsObject) and referencing it in a variable
@@ -787,9 +787,11 @@ class Cat extends Animal {
   //the explicit execution of the short class method syntax named constructor of the parent class blueprint/temaplte.
 
   //implcity create short class method syntax named constructor with 2 paremeters
+  //implcitly creating a literal jsObject ie(the instance jsObject) and referencing it in a variable
   //implcitly execute short class method syntax named constructor of parent class blueprint/temaplte passing in
   //in 2 arguments(ie the arguments passed into 2 parameters of implcitly created short class method syntax named constructor)
   //because of extends keyword
+  //implicitly return the created literal jsObject(ie instance jsObject) referenced though a variable
 
   //creating/initiazlizing reusabled/common copie of prototypeObject object method on all created/returned literal jsObject ie(the instance jsObject)
   //by adding it as a unique long syntax object method on the prototypeObject instead
@@ -817,6 +819,8 @@ class Mouse {
   //arguments that would be passed into the explicit short class method syntax named constructor's paramters
 
   //implcity create short class method syntax named constructor with 0 paremeters
+  //implcitly creating a literal jsObject ie(the instance jsObject) and referencing it in a variable
+  //implicitly return the created literal jsObject(ie instance jsObject) referenced though a variable
 
   //creating/initiazlizing reusabled/common copie of prototypeObject object method on all created/returned literal jsObject ie(the instance jsObject)
   //by adding it as a unique long syntax object method on the prototypeObject instead
