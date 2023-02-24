@@ -352,7 +352,6 @@ console.log(
 //9.If we create a class blueprint/temaplte that dosnt extend a parent class blueprint/temaplte, and dont provide an explicit short class method syntax named constructor
 //it implcitly creates a short class method syntax named constructor with no parameters.This means we dont want to initiazlie any class properties(ie class variables/fields).
 //10.If we create a child/sub class blueprint/tempalte that extends a parent class blueprint/template, and dont provide an explicit short class method syntax named constructor
-//and explicitly execute the short class method syntaxed named construtore of the parent class blueprint/temaplte
 //it implcitly executes the short class method syntax named constructor of parent class blueprint/temaplte because of extends keyword and then
 //implcity create short class method syntax named constructor with 0 paremeters.We do this when we dont want to inittiazlie any extra class properties(ie class variables/fields)
 //ontop of the class propperties(ie class variables/fields) initazlies by the implicit execution of the short class method syntax named construor of the parent class blueprint/temaplte.
@@ -693,7 +692,6 @@ console.dir(Player.createRandomInstancePlayerObject());
 //4.If we create a class blueprint/temaplte that dosnt extend a parent class blueprint/temaplte, and dont provide an explicit short class method syntax named constructor
 //it implcitly creates a short class method syntax named constructor with no parameters.This means we dont want to initiazlie any class properties(ie class variables/fields).
 //5.If we create a child/sub class blueprint/tempalte that extends a parent class blueprint/template, and dont provide an explicit short class method syntax named constructor
-//and explicitly execute the short class method syntaxed named construtore of the parent class blueprint/temaplte
 //it implcitly executes the short class method syntax named constructor of parent class blueprint/temaplte because of extends keyword and then
 //implcity create short class method syntax named constructor with 0 paremeters.We do this when we dont wan to inittiazlie any extra class properties(ie class variables/fields)
 //ontop of the class propperties initazlies by the implicit execution of the short class method syntax named construor of the parent class blueprint/temaplte.
